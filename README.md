@@ -66,6 +66,20 @@ you can also cycle the list in both directions
 :lua require("harpoon.ui").nav_prev()                   -- navigates to previous mark
 ```
 
+### Marks Removal
+
+You can remove the currenctly marked file by using the toggle method. The toggle method can also be used to add files if the they are not currently marked.
+
+```lua
+:lua require("harpoon.mark").toggle_file()
+```
+
+If you want to remove all marks, use
+```lua
+:lua require("harpoon.mark").clear_all()
+```
+
+
 ### Terminal Navigation
 this works like file navigation except that if there is no terminal at the specified index
 a new terminal is created.
